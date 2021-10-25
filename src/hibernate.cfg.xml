@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://10.0.1.98:5432/ImiesProject</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">jeanmichel</property>
+    <mapping class="ClassBdd.Ecf"/>
+    <mapping class="ClassBdd.Former"/>
+    <mapping class="ClassBdd.Note"/>
+    <mapping class="ClassBdd.Promotion"/>
+    <mapping class="ClassBdd.School"/>
+    <mapping class="ClassBdd.Student"/>
+    <mapping class="ClassBdd.Formation"/>
+  </session-factory>
+</hibernate-configuration>
